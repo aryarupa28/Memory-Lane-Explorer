@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Memory Lane Explorer</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #f2f2f2; /* Off-white background */
+    }
+
+    .cover {
+      background-image: url('img.jpeg');
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      padding: 0 20px; /* Add padding to center content */
+    }
+
+    .cover h1 {
+      font-size: 60px;
+      font-weight: bold;
+      color: #333333; /* Dark gray heading color */
+      margin-bottom: 30px;
+    }
+
+    .cover-subtitle {
+      font-size: 24px;
+      color: #666666; /* Dark gray subtitle color */
+      margin-bottom: 30px;
+    }
+
+    .cover-buttons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .cover-buttons button {
+      padding: 15px 30px;
+      margin: 0 20px;
+      font-size: 18px;
+      font-weight: bold;
+      background-color: maroon; /* Maroon button background color */
+      color: #ffffff; /* White button text color */
+      border: 2px solid transparent; /* Transparent border initially */
+      border-radius: 5px;
+      cursor: pointer;
+      transition: all 0.3s ease; /* Transition all properties */
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    .cover-buttons button:hover {
+      background-color: #f2f2f2; /* Off-white button background color on hover */
+      color: maroon; /* Maroon text color on hover */
+      border-color: maroon; /* Maroon border color on hover */
+      transform: scale(1.1); /* Scale up the button on hover */
+    }
+
+    .cover-buttons button a {
+      color: inherit; /* Inherit color from parent button */
+      text-decoration: none; /* Remove underline */
+    }
+
+    .cover-buttons button:hover a {
+      color: maroon; /* Change text color to maroon on hover */
+    }
+
+  </style>
+</head>
+<body>
+  <div class="cover">
+    <h1>Memory Lane Explorer</h1>
+    <p class="cover-subtitle">Journey through your memories</p>
+    <div class="cover-buttons">
+      <button id="login-button"><a href="login.html">Login</a></button>
+      <button id="signup-button"><a href="signup.html">Sign Up</a></button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

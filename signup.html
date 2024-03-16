@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sign Up - Memory Lane Explorer</title>
+  <style>
+    /* CSS styles (same as before) */
+    body {
+        background-image: url('img.jpeg'); 
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        color: #fff; /* Set default text color to white */
+      }
+  
+      /* Center align content */
+      .center-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+  
+      /* Form styles */
+      .signup-form {
+        background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+        padding: 40px;
+        border-radius: 10px;
+        max-width: 400px;
+        width: 90%; /* Adjust the width to fit within one page */
+        text-align: center;
+      }
+  
+      .signup-form h1 {
+        font-size: 32px;
+        margin-bottom: 20px;
+      }
+  
+      .input-container {
+        margin-bottom: 20px;
+        text-align: left;
+      }
+  
+      .input-container label {
+        display: block;
+        font-size: 18px;
+        margin-bottom: 5px;
+        color: #fff; /* White label text color */
+      }
+  
+      .input-container input {
+        width: 93%; /* Make the input boxes full width */
+        padding: 12px;
+        font-size: 16px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        background-color: #f2f2f2; /* Off-white input background color */
+        color: #333; /* Dark gray input text color */
+      }
+  
+      /* Button styles */
+      button[type="submit"] {
+        width: 100%;
+        padding: 12px;
+        font-size: 18px;
+        background-color: #b12952; /* Maroon button background color */
+        color: #fff; /* White button text color */
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+  
+      button[type="submit"]:hover {
+        background-color: #800040; /* Darker maroon button background color on hover */
+      }
+  
+      /* Links styles */
+      .links-container {
+        margin-top: 20px;
+        text-align: center;
+      }
+  
+      .links-container a {
+        color: #fff; /* White link text color */
+        text-decoration: none;
+        font-size: 16px;
+        transition: color 0.3s ease;
+      }
+  
+      .links-container a:hover {
+        color: #ccc; /* Light gray link text color on hover */
+      }
+      .signup-form {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    padding: 30px; /* Adjusted padding */
+    border-radius: 10px;
+    max-width: 400px;
+    width: 90%; /* Adjust the width to fit within one page */
+    text-align: center;
+  }  
+  </style>
+</head>
+<body>
+  <div class="center-content">
+    <div class="signup-form">
+      <h1>Join Memory Lane Explorer</h1>
+      <form action="#" method="POST" id="signup-form">
+        <div class="input-container">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="input-container">
+          <label for="username">Choose a Username:</label>
+          <input type="text" id="username" name="username" required>
+        </div>
+        <div class="input-container">
+          <label for="password">Create a Password:</label>
+          <input type="password" id="password" name="password" required>
+        </div>
+        <div class="input-container">
+          <label for="confirmPassword">Confirm Password:</label>
+          <input type="password" id="confirmPassword" name="confirmPassword" required>
+        </div>
+        <button type="submit">Sign Up</button>
+      </form>
+      <div class="links-container">
+        <a href="login.html">Already have an account? Login</a>
+      </div>
+    </div>
+  </div>
+  <!-- External JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
